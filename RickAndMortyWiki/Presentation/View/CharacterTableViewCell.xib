@@ -21,7 +21,7 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuV-19-HYf">
-                    <rect key="frame" x="140" y="27.5" width="412" height="25.5"/>
+                    <rect key="frame" x="140" y="27.5" width="382" height="25.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -32,17 +32,27 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forward" translatesAutoresizingMaskIntoConstraints="NO" id="b2D-lO-qU6">
+                    <rect key="frame" x="522" y="50" width="20" height="30"/>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="59e-8Y-7L4"/>
+                        <constraint firstAttribute="height" constant="30" id="LYN-dr-flQ"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <constraints>
                 <constraint firstItem="trY-mR-nie" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="3xk-Cr-zYZ"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XuV-19-HYf" secondAttribute="trailing" id="G3k-Jl-pUS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="b2D-lO-qU6" secondAttribute="trailing" constant="10" id="Gzu-Fc-zSY"/>
                 <constraint firstAttribute="bottom" secondItem="trY-mR-nie" secondAttribute="bottom" id="JHO-ve-7cz"/>
                 <constraint firstItem="9YS-d2-oEa" firstAttribute="leading" secondItem="XuV-19-HYf" secondAttribute="leading" id="NdH-Kj-1S4"/>
                 <constraint firstItem="XuV-19-HYf" firstAttribute="centerY" secondItem="trY-mR-nie" secondAttribute="centerY" constant="-20" id="NnN-kM-HaA"/>
+                <constraint firstItem="b2D-lO-qU6" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="XE5-Yd-DbN"/>
                 <constraint firstItem="9YS-d2-oEa" firstAttribute="top" secondItem="XuV-19-HYf" secondAttribute="bottom" constant="10" id="YvS-du-A6i"/>
                 <constraint firstItem="XuV-19-HYf" firstAttribute="leading" secondItem="trY-mR-nie" secondAttribute="trailing" constant="20" id="gwo-JN-xaI"/>
                 <constraint firstAttribute="top" secondItem="trY-mR-nie" secondAttribute="top" id="tmR-t7-TJm"/>
+                <constraint firstItem="XuV-19-HYf" firstAttribute="trailing" secondItem="b2D-lO-qU6" secondAttribute="leading" id="zbt-Fr-4bb"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
@@ -55,4 +65,7 @@
             <point key="canvasLocation" x="453.62318840579712" y="-731.25"/>
         </view>
     </objects>
+    <resources>
+        <image name="forward" width="50" height="50"/>
+    </resources>
 </document>
