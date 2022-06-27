@@ -70,18 +70,42 @@
         <!--Location-->
         <scene sceneID="byc-HH-VBi">
             <objects>
-                <viewController id="bhk-g7-ySO" sceneMemberID="viewController">
+                <viewController id="bhk-g7-ySO" customClass="LocationViewController" customModule="RickAndMortyWiki" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lBa-fP-NHC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="60" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="H5s-J7-0DN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationCell" rowHeight="60" id="7qA-DF-GvE">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7qA-DF-GvE" id="4C1-cc-Iz6">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Lkr-6t-LYq"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="H5s-J7-0DN" firstAttribute="bottom" secondItem="Lkr-6t-LYq" secondAttribute="bottom" id="1Gm-WH-8RE"/>
+                            <constraint firstItem="H5s-J7-0DN" firstAttribute="centerX" secondItem="lBa-fP-NHC" secondAttribute="centerX" id="6ou-QO-7yw"/>
+                            <constraint firstItem="H5s-J7-0DN" firstAttribute="top" secondItem="lBa-fP-NHC" secondAttribute="topMargin" id="7zt-W9-mbu"/>
+                            <constraint firstItem="H5s-J7-0DN" firstAttribute="width" secondItem="lBa-fP-NHC" secondAttribute="width" id="Swn-QD-kNd"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Location" image="map" catalog="system" id="twh-bk-ZZX"/>
+                    <connections>
+                        <outlet property="tableView" destination="H5s-J7-0DN" id="mUw-VB-ofI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3U1-hG-r9n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-884" y="87"/>
+            <point key="canvasLocation" x="-884.05797101449286" y="86.383928571428569"/>
         </scene>
         <!--Search-->
         <scene sceneID="kmU-po-iSH">
@@ -109,9 +133,6 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

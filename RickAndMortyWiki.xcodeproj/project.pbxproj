@@ -23,6 +23,10 @@
 		0EF7940C286988AE00C87289 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7940B286988AE00C87289 /* CharacterRepository.swift */; };
 		0EF7940E286990FF00C87289 /* CharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF7940D286990FF00C87289 /* CharacterTableViewCell.xib */; };
 		0EF794102869927F00C87289 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7940F2869927F00C87289 /* CharacterTableViewCell.swift */; };
+		0EFD083228699ED80018B06E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFD083128699ED80018B06E /* Location.swift */; };
+		0EFD083428699F2F0018B06E /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFD083328699F2F0018B06E /* LocationRepository.swift */; };
+		0EFD083628699F9F0018B06E /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFD083528699F9F0018B06E /* LocationViewModel.swift */; };
+		0EFD083828699FDC0018B06E /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFD083728699FDC0018B06E /* LocationViewController.swift */; };
 		590D9E64C236465A50FD84FB /* Pods_RickAndMortyWikiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F907E8DA1B3EACB5A731B334 /* Pods_RickAndMortyWikiTests.framework */; };
 		B1EF6A3417B4298D8CBE46BD /* Pods_RickAndMortyWiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF148400B58D3DA9B9D43267 /* Pods_RickAndMortyWiki.framework */; };
 		CE651C964E0518176ABD22AA /* Pods_RickAndMortyWiki_RickAndMortyWikiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E831E72233F4CC1197AE35AF /* Pods_RickAndMortyWiki_RickAndMortyWikiUITests.framework */; };
@@ -66,6 +70,10 @@
 		0EF7940B286988AE00C87289 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
 		0EF7940D286990FF00C87289 /* CharacterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterTableViewCell.xib; sourceTree = "<group>"; };
 		0EF7940F2869927F00C87289 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		0EFD083128699ED80018B06E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		0EFD083328699F2F0018B06E /* LocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
+		0EFD083528699F9F0018B06E /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		0EFD083728699FDC0018B06E /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		2D1759742BC68B5A1DC21940 /* Pods-RickAndMortyWikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyWikiTests.debug.xcconfig"; path = "Target Support Files/Pods-RickAndMortyWikiTests/Pods-RickAndMortyWikiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		667295827BAFA1C4F099EF60 /* Pods-RickAndMortyWiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyWiki.debug.xcconfig"; path = "Target Support Files/Pods-RickAndMortyWiki/Pods-RickAndMortyWiki.debug.xcconfig"; sourceTree = "<group>"; };
 		95088291CCD37873765E2E96 /* Pods-RickAndMortyWikiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyWikiTests.release.xcconfig"; path = "Target Support Files/Pods-RickAndMortyWikiTests/Pods-RickAndMortyWikiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +184,7 @@
 				0ED4615528698284000987FA /* CharacterViewController.swift */,
 				0EF7940D286990FF00C87289 /* CharacterTableViewCell.xib */,
 				0EF7940F2869927F00C87289 /* CharacterTableViewCell.swift */,
+				0EFD083728699FDC0018B06E /* LocationViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				0ED4615128696B92000987FA /* Character.swift */,
+				0EFD083128699ED80018B06E /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				0EF794082869872C00C87289 /* CharactersViewModel.swift */,
+				0EFD083528699F9F0018B06E /* LocationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -217,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				0EF7940B286988AE00C87289 /* CharacterRepository.swift */,
+				0EFD083328699F2F0018B06E /* LocationRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -486,9 +498,13 @@
 			files = (
 				0ED4615628698284000987FA /* CharacterViewController.swift in Sources */,
 				0EF794092869872C00C87289 /* CharactersViewModel.swift in Sources */,
+				0EFD083428699F2F0018B06E /* LocationRepository.swift in Sources */,
+				0EFD083228699ED80018B06E /* Location.swift in Sources */,
 				0EF794102869927F00C87289 /* CharacterTableViewCell.swift in Sources */,
 				0EBD87D628683FAB003E4708 /* AppDelegate.swift in Sources */,
 				0ED4615428696F78000987FA /* ApiService.swift in Sources */,
+				0EFD083828699FDC0018B06E /* LocationViewController.swift in Sources */,
+				0EFD083628699F9F0018B06E /* LocationViewModel.swift in Sources */,
 				0EBD8809286964EA003E4708 /* MainTabBarController.swift in Sources */,
 				0EF7940C286988AE00C87289 /* CharacterRepository.swift in Sources */,
 				0EBD87D828683FAB003E4708 /* SceneDelegate.swift in Sources */,
