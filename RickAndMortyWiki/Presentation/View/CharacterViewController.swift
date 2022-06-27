@@ -34,7 +34,10 @@ class CharacterViewController: UIViewController {
     private func bindViewModel() {
         viewModel.characters.bind(to: tableView.rx.items) { tableView, index, item in
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell") as? CharacterTableViewCell else { return UITableViewCell() }
-            cell.thumbnailView.kf.setImage(with: URL(string: item.image))
+            cell.thumbnailView.kf.setImage(with: URL(string: item.image), options: [
+                .transition(.fade(1)),
+                .processor(RoundCornerImageProcessor(cornerRadius: 200))
+            ])
             cell.nameLabel?.text = item.name
             cell.statusLabel?.text = item.status.rawValue
             
