@@ -40,6 +40,7 @@ class CharacterViewController: UIViewController {
             ])
             cell.nameLabel?.text = item.name
             cell.statusLabel?.text = item.status.rawValue
+            cell.status = item.status
             
             return cell
         }.disposed(by: disposeBag)
