@@ -209,6 +209,21 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="magnifyingglass" catalog="system"/>
                             </button>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="i0D-di-ldv">
+                                <rect key="frame" x="0.0" y="148" width="414" height="748"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultCell" id="Kmp-BW-dQH">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kmp-BW-dQH" id="tat-xI-ApK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="archivebox" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VFB-1l-iYT">
                                 <rect key="frame" x="157" y="401.5" width="100" height="97.5"/>
                                 <constraints>
@@ -216,41 +231,32 @@
                                     <constraint firstAttribute="height" constant="100" id="Air-DJ-d4a"/>
                                 </constraints>
                             </imageView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mnc-de-sqM" customClass="SearchResultView" customModule="RickAndMortyWiki" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="148" width="414" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="AJv-9I-qC8"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gvR-Ek-gD0"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VFB-1l-iYT" firstAttribute="centerY" secondItem="gvR-Ek-gD0" secondAttribute="centerY" id="CNX-Ua-K4i"/>
-                            <constraint firstItem="gvR-Ek-gD0" firstAttribute="trailing" secondItem="mnc-de-sqM" secondAttribute="trailing" id="DK0-CZ-ncA"/>
                             <constraint firstItem="JdF-D1-Xzj" firstAttribute="leading" secondItem="wDm-Su-fLr" secondAttribute="trailing" id="KOk-wn-Lio"/>
-                            <constraint firstItem="mnc-de-sqM" firstAttribute="top" secondItem="wDm-Su-fLr" secondAttribute="bottom" constant="10" id="OG3-yz-enl"/>
                             <constraint firstItem="wDm-Su-fLr" firstAttribute="top" secondItem="gvR-Ek-gD0" secondAttribute="top" id="SXq-eD-jSK"/>
                             <constraint firstItem="gvR-Ek-gD0" firstAttribute="trailing" secondItem="JdF-D1-Xzj" secondAttribute="trailing" constant="10" id="duD-cA-b6a"/>
                             <constraint firstItem="VFB-1l-iYT" firstAttribute="centerX" secondItem="gvR-Ek-gD0" secondAttribute="centerX" id="oh8-tt-pqV"/>
                             <constraint firstItem="wDm-Su-fLr" firstAttribute="bottom" secondItem="JdF-D1-Xzj" secondAttribute="bottom" id="pKM-Vb-cxJ"/>
                             <constraint firstItem="JdF-D1-Xzj" firstAttribute="centerY" secondItem="wDm-Su-fLr" secondAttribute="centerY" id="rsR-2y-3AM"/>
                             <constraint firstItem="wDm-Su-fLr" firstAttribute="leading" secondItem="gvR-Ek-gD0" secondAttribute="leading" constant="20" id="uDC-5r-p41"/>
-                            <constraint firstItem="mnc-de-sqM" firstAttribute="leading" secondItem="gvR-Ek-gD0" secondAttribute="leading" id="uno-lc-anS"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="WtK-rT-QS4"/>
                     <navigationItem key="navigationItem" id="pJf-Uk-RrS"/>
                     <connections>
                         <outlet property="emptyView" destination="VFB-1l-iYT" id="SOg-EN-Onr"/>
-                        <outlet property="resultView" destination="mnc-de-sqM" id="hyu-fo-wgE"/>
                         <outlet property="searchButton" destination="JdF-D1-Xzj" id="7BM-pd-m8F"/>
                         <outlet property="searchTextField" destination="wDm-Su-fLr" id="wSH-8I-qMm"/>
+                        <outlet property="tableView" destination="i0D-di-ldv" id="PG2-Bx-zDM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mad-BO-9YY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1168" y="188"/>
+            <point key="canvasLocation" x="1166.6666666666667" y="187.5"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

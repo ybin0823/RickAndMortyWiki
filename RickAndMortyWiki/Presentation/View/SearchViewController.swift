@@ -13,7 +13,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var emptyView: UIImageView!
-    @IBOutlet weak var resultView: SearchResultView!
+    @IBOutlet weak var tableView: UITableView!
     
     var viewModel: SearchViewModel!
     
@@ -45,6 +45,17 @@ class SearchViewController: UIViewController {
     
     private func bindViewModel() {
         viewModel.placeHolderText.bind(to: searchTextField.rx.placeholder).disposed(by: disposeBag)
+        viewModel.results.map { $0.isEmpty }.bind(to: tableView.rx.isHidden).disposed(by: disposeBag)
+        viewModel.results.map { !$0.isEmpty }.bind(to: emptyView.rx.isHidden).disposed(by: disposeBag)
+        
+        viewModel.results.bind(to: tableView.rx.items) { tableView, index, item in
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultCell") else { return UITableViewCell() }
+            
+            cell.textLabel?.text = item.name
+            
+            return cell
+        }.disposed(by: disposeBag)
+
     }
     
     //TODO: - (jyb) RxGesture 가 좋을지

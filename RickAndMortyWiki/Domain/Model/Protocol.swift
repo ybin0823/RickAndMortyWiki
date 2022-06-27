@@ -7,4 +7,7 @@
 
 import Foundation
 
-protocol CanSearch {}
+protocol CanSearch {
+    var id: Int { get }
+    var name: String { get }
+}
