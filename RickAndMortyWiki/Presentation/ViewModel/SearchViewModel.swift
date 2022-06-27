@@ -15,26 +15,38 @@ enum SearchType: String {
 }
 
 class SearchViewModel {
-    var episode = PublishSubject<Episode?>()
+    var results = BehaviorSubject<[CanSearch]>(value: [])
+    
     let placeHolderText = BehaviorSubject<String>(value: "Search")
     let type: SearchType
-    let repository: EpisodeRepository
+    let repository: SearchRepository
     
     private let disposeBag = DisposeBag()
     
-    init(type: SearchType, repository: EpisodeRepository) {
+    init(type: SearchType, repository: SearchRepository) {
         self.type = type
         self.repository = repository
     
         placeHolderText.onNext("\(type.rawValue) Search")
     }
     
-    func search(id: Int) {
-        repository.getEpisode(id: id)
-            .catchAndReturn(nil)
-            .subscribe {
-            self.episode.onNext($0)
+    func search(text: String) {
+        switch type {
+        case .character:
+            repository.getCharacters(name: text).subscribe {
+                self.results.onNext($0.results)
+            }
+            .disposed(by: disposeBag)
+        case .location:
+            repository.getLocations(name: text).subscribe {
+                self.results.onNext($0.results)
+            }
+            .disposed(by: disposeBag)
+        case .episode:
+            repository.getEpisodes(name: text).subscribe {
+                self.results.onNext($0.results)
+            }
+            .disposed(by: disposeBag)
         }
-        .disposed(by: disposeBag)
     }
 }

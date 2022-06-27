@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0E001F0C2869EC3200F1FDFE /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E001F0B2869EC3200F1FDFE /* EpisodeViewModel.swift */; };
+		0E001F0E2869F9D300F1FDFE /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E001F0D2869F9D300F1FDFE /* SearchRepository.swift */; };
+		0E001F102869FA8C00F1FDFE /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E001F0F2869FA8C00F1FDFE /* Protocol.swift */; };
 		0E01C6C82869B4BE00280238 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C6C72869B4BE00280238 /* SearchViewController.swift */; };
 		0E01C6CA2869B7D300280238 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C6C92869B7D300280238 /* Episode.swift */; };
 		0E01C6CC2869B87E00280238 /* EpisodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C6CB2869B87E00280238 /* EpisodeRepository.swift */; };
@@ -59,6 +61,8 @@
 
 /* Begin PBXFileReference section */
 		0E001F0B2869EC3200F1FDFE /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
+		0E001F0D2869F9D300F1FDFE /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		0E001F0F2869FA8C00F1FDFE /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		0E01C6C72869B4BE00280238 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0E01C6C92869B7D300280238 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		0E01C6CB2869B87E00280238 /* EpisodeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRepository.swift; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 				0ED4615128696B92000987FA /* Character.swift */,
 				0EFD083128699ED80018B06E /* Location.swift */,
 				0E01C6C92869B7D300280238 /* Episode.swift */,
+				0E001F0F2869FA8C00F1FDFE /* Protocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				0EF7940B286988AE00C87289 /* CharacterRepository.swift */,
 				0EFD083328699F2F0018B06E /* LocationRepository.swift */,
 				0E01C6CB2869B87E00280238 /* EpisodeRepository.swift */,
+				0E001F0D2869F9D300F1FDFE /* SearchRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -538,7 +544,9 @@
 				0EF7940C286988AE00C87289 /* CharacterRepository.swift in Sources */,
 				0EBD87D828683FAB003E4708 /* SceneDelegate.swift in Sources */,
 				0E01C6CE2869BA5200280238 /* SearchViewModel.swift in Sources */,
+				0E001F102869FA8C00F1FDFE /* Protocol.swift in Sources */,
 				0E01C6CA2869B7D300280238 /* Episode.swift in Sources */,
+				0E001F0E2869F9D300F1FDFE /* SearchRepository.swift in Sources */,
 				0E001F0C2869EC3200F1FDFE /* EpisodeViewModel.swift in Sources */,
 				0ED4615228696B92000987FA /* Character.swift in Sources */,
 			);

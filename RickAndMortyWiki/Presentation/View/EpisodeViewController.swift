@@ -32,7 +32,7 @@ class EpisodeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let searchViewController = segue.destination as? SearchViewController {
-            searchViewController.viewModel = SearchViewModel(type: .episode, repository: EpisodeRepositoryImpl())
+            searchViewController.viewModel = SearchViewModel(type: .episode, repository: SearchRepositoryImpl())
         }
     }
 }

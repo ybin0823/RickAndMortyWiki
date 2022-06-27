@@ -20,7 +20,7 @@ enum Gender: String, Codable {
     case unknown
 }
 
-struct Character: Codable {
+struct Character: Codable, CanSearch {
     let id: Int
     let name: String
     let status: CharacterStatus

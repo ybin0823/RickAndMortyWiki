@@ -30,7 +30,7 @@ class SearchViewController: UIViewController {
                     return
                 }
                 
-                self?.viewModel.search(id: Int(text) ?? 0)
+                self?.viewModel.search(text: text)
             })
             .disposed(by: disposeBag)
         
@@ -45,10 +45,6 @@ class SearchViewController: UIViewController {
     
     private func bindViewModel() {
         viewModel.placeHolderText.bind(to: searchTextField.rx.placeholder).disposed(by: disposeBag)
-        viewModel.episode.map { $0 != nil }.bind(to: emptyView.rx.isHidden).disposed(by: disposeBag)
-        viewModel.episode.map { $0 == nil }.bind(to: resultView.rx.isHidden).disposed(by: disposeBag)
-        
-        viewModel.episode.bind(to: resultView.rx.model).disposed(by: disposeBag)
     }
     
     //TODO: - (jyb) RxGesture 가 좋을지
