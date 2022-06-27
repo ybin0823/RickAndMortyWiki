@@ -1,0 +1,6 @@
+framework module Pods_RickAndMortyWikiTests {
+  umbrella header "Pods-RickAndMortyWikiTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
