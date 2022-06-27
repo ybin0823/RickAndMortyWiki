@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 import RxCocoa
 
 class SearchViewController: UIViewController {
@@ -13,16 +14,38 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var emptyView: UIImageView!
     
+    let viewModel = SearchViewModel(repository: EpisodeRepositoryImpl())
+    
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         addTabGestureForHideKeyboard()
+        
+        searchButton.rx.tap.throttle(.milliseconds(500), scheduler: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] in
+                guard let text = self?.searchTextField.text, !text.isEmpty else {
+                    return
+                }
+                
+                self?.viewModel.search(id: Int(text) ?? 0)
+            })
+            .disposed(by: disposeBag)
+        
+        bindViewModel()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         searchTextField.becomeFirstResponder()
+    }
+    
+    private func bindViewModel() {
+        viewModel.episode.subscribe { [weak self] event in
+            self?.emptyView.isHidden = (event.element != nil)
+        }.disposed(by: disposeBag)
     }
     
     //TODO: - (jyb) RxGesture 가 좋을지
