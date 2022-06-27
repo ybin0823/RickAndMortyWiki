@@ -9,10 +9,11 @@ import UIKit
 import RxSwift
 
 class LocationViewController: UIViewController {
-    let disposeBag = DisposeBag()
-    let viewModel = LocationViewModel(repository: LocationRepositoryImpl())
-    
     @IBOutlet weak var tableView: UITableView!
+    
+    private let disposeBag = DisposeBag()
+    
+    let viewModel = LocationViewModel(repository: LocationRepositoryImpl())
     
     override func viewDidLoad() {
         super.viewDidLoad()
