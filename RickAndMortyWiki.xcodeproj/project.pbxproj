@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		0EBD87D628683FAB003E4708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD87D528683FAB003E4708 /* AppDelegate.swift */; };
 		0EBD87D828683FAB003E4708 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD87D728683FAB003E4708 /* SceneDelegate.swift */; };
-		0EBD87DA28683FAB003E4708 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD87D928683FAB003E4708 /* ViewController.swift */; };
 		0EBD87DD28683FAB003E4708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBD87DB28683FAB003E4708 /* Main.storyboard */; };
 		0EBD87DF28683FAC003E4708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBD87DE28683FAC003E4708 /* Assets.xcassets */; };
 		0EBD87E228683FAC003E4708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBD87E028683FAC003E4708 /* LaunchScreen.storyboard */; };
 		0EBD87ED28683FAC003E4708 /* RickAndMortyWikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD87EC28683FAC003E4708 /* RickAndMortyWikiTests.swift */; };
 		0EBD87F728683FAC003E4708 /* RickAndMortyWikiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD87F628683FAC003E4708 /* RickAndMortyWikiUITests.swift */; };
 		0EBD87F928683FAC003E4708 /* RickAndMortyWikiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD87F828683FAC003E4708 /* RickAndMortyWikiUITestsLaunchTests.swift */; };
+		0EBD8809286964EA003E4708 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD8808286964EA003E4708 /* MainTabBarController.swift */; };
 		590D9E64C236465A50FD84FB /* Pods_RickAndMortyWikiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F907E8DA1B3EACB5A731B334 /* Pods_RickAndMortyWikiTests.framework */; };
 		B1EF6A3417B4298D8CBE46BD /* Pods_RickAndMortyWiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF148400B58D3DA9B9D43267 /* Pods_RickAndMortyWiki.framework */; };
 		CE651C964E0518176ABD22AA /* Pods_RickAndMortyWiki_RickAndMortyWikiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E831E72233F4CC1197AE35AF /* Pods_RickAndMortyWiki_RickAndMortyWikiUITests.framework */; };
@@ -42,7 +42,6 @@
 		0EBD87D228683FAB003E4708 /* RickAndMortyWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBD87D528683FAB003E4708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EBD87D728683FAB003E4708 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0EBD87D928683FAB003E4708 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0EBD87DC28683FAB003E4708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EBD87DE28683FAC003E4708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EBD87E128683FAC003E4708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		0EBD87F228683FAC003E4708 /* RickAndMortyWikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyWikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBD87F628683FAC003E4708 /* RickAndMortyWikiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyWikiUITests.swift; sourceTree = "<group>"; };
 		0EBD87F828683FAC003E4708 /* RickAndMortyWikiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyWikiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0EBD8808286964EA003E4708 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		2D1759742BC68B5A1DC21940 /* Pods-RickAndMortyWikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyWikiTests.debug.xcconfig"; path = "Target Support Files/Pods-RickAndMortyWikiTests/Pods-RickAndMortyWikiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		667295827BAFA1C4F099EF60 /* Pods-RickAndMortyWiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyWiki.debug.xcconfig"; path = "Target Support Files/Pods-RickAndMortyWiki/Pods-RickAndMortyWiki.debug.xcconfig"; sourceTree = "<group>"; };
 		95088291CCD37873765E2E96 /* Pods-RickAndMortyWikiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyWikiTests.release.xcconfig"; path = "Target Support Files/Pods-RickAndMortyWikiTests/Pods-RickAndMortyWikiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,9 +116,11 @@
 		0EBD87D428683FAB003E4708 /* RickAndMortyWiki */ = {
 			isa = PBXGroup;
 			children = (
+				0EBD880B28696548003E4708 /* Common */,
+				0EBD880A28696542003E4708 /* Domain */,
+				0EBD8805286964BE003E4708 /* Presentation */,
 				0EBD87D528683FAB003E4708 /* AppDelegate.swift */,
 				0EBD87D728683FAB003E4708 /* SceneDelegate.swift */,
-				0EBD87D928683FAB003E4708 /* ViewController.swift */,
 				0EBD87DB28683FAB003E4708 /* Main.storyboard */,
 				0EBD87DE28683FAC003E4708 /* Assets.xcassets */,
 				0EBD87E028683FAC003E4708 /* LaunchScreen.storyboard */,
@@ -144,6 +146,36 @@
 			path = RickAndMortyWikiUITests;
 			sourceTree = "<group>";
 		};
+		0EBD8805286964BE003E4708 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0EBD8806286964D9003E4708 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0EBD8806286964D9003E4708 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0EBD8808286964EA003E4708 /* MainTabBarController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0EBD880A28696542003E4708 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0EBD880B28696548003E4708 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		4C932CE3F2C4C4198EB0FDB7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +186,6 @@
 				2D1759742BC68B5A1DC21940 /* Pods-RickAndMortyWikiTests.debug.xcconfig */,
 				95088291CCD37873765E2E96 /* Pods-RickAndMortyWikiTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,8 +438,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EBD87DA28683FAB003E4708 /* ViewController.swift in Sources */,
 				0EBD87D628683FAB003E4708 /* AppDelegate.swift in Sources */,
+				0EBD8809286964EA003E4708 /* MainTabBarController.swift in Sources */,
 				0EBD87D828683FAB003E4708 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
