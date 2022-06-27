@@ -7,28 +7,29 @@
 
 import Foundation
 
-enum CharacterStatus {
-    case alive
-    case dead
+enum CharacterStatus: String, Codable {
+    case alive = "Alive"
+    case dead = "Dead"
     case unknown
 }
 
-enum Gender {
-    case male
-    case female
-    case genderless
+enum Gender: String, Codable {
+    case male = "Male"
+    case female = "Female"
+    case genderless = "Genderless"
     case unknown
 }
 
 struct Character: Codable {
     let id: Int
     let name: String
-//    let status: CharacterStatus
+    let status: CharacterStatus
     let species: String
     let type: String
-//    let gender: Gender
+    let gender: Gender
     let url: String
     let created: String
+    let image: String
 //    let episode: [String]
 }
 
