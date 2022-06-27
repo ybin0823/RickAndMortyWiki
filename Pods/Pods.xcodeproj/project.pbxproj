@@ -597,7 +597,7 @@
 		58103178A42A90BA7227E1FC4D2F9531 /* Infallible+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Infallible+Operators.swift"; path = "RxSwift/Traits/Infallible/Infallible+Operators.swift"; sourceTree = "<group>"; };
 		5B8C274F52B41D96A0A884F9A30D5109 /* NSSlider+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSSlider+Rx.swift"; path = "RxCocoa/macOS/NSSlider+Rx.swift"; sourceTree = "<group>"; };
 		5D5D3B1708FAF26119FE5B5A8854831F /* Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Driver.swift; path = RxCocoa/Traits/Driver/Driver.swift; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D9C581D8B51DDE8EA6962F4C587D403 /* RxMutableBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxMutableBox.swift; path = RxSwift/RxMutableBox.swift; sourceTree = "<group>"; };
 		5DFCC8571DAE2CD1080A3BDA023CDC6F /* Never.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Never.swift; path = RxSwift/Observables/Never.swift; sourceTree = "<group>"; };
 		5E86F9BCE8C124E723BBE74FB9636B7D /* Merge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Merge.swift; path = RxSwift/Observables/Merge.swift; sourceTree = "<group>"; };
@@ -655,7 +655,7 @@
 		822EE235EF9F7FCBB69FE59120B000AE /* Pods-RickAndMortyWiki-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RickAndMortyWiki-frameworks.sh"; sourceTree = "<group>"; };
 		8260241923B9B10FEDDF7F511271BAC3 /* RxSearchBarDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxSearchBarDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxSearchBarDelegateProxy.swift; sourceTree = "<group>"; };
 		82A6DAF026EA9F46DB1AA08E3BAE5BDC /* RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RxSwift.release.xcconfig; sourceTree = "<group>"; };
-		82F1475AA0F9C33F7EA4A1459305D2AB /* RxAlamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxAlamofire; path = RxAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F1475AA0F9C33F7EA4A1459305D2AB /* RxAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832C3B896F90A731E9B56F428436C34D /* UITextField+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+Rx.swift"; path = "RxCocoa/iOS/UITextField+Rx.swift"; sourceTree = "<group>"; };
 		834E87F107E2F42D1FA2B7019C7C4872 /* Pods-RickAndMortyWikiTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RickAndMortyWikiTests-umbrella.h"; sourceTree = "<group>"; };
 		83C9AB1AA5013C50BD56A25DD1C1A792 /* RxRelay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxRelay-prefix.pch"; sourceTree = "<group>"; };
@@ -696,7 +696,7 @@
 		9B865CD0490DC252EB0EA42C1959B214 /* DispatchQueueConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchQueueConfiguration.swift; path = RxSwift/Schedulers/Internal/DispatchQueueConfiguration.swift; sourceTree = "<group>"; };
 		9D60758402C9C53290FB022EF4C9221F /* Empty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Empty.swift; path = RxSwift/Observables/Empty.swift; sourceTree = "<group>"; };
 		9D74B02AA3C3FC76FD56A373354A09C0 /* CurrentThreadScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrentThreadScheduler.swift; path = RxSwift/Schedulers/CurrentThreadScheduler.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DB7898D50324A4518728714F181F21B /* Pods-RickAndMortyWiki-RickAndMortyWikiUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RickAndMortyWiki-RickAndMortyWikiUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9EFC1E35BFD2776E0B9BF94A54EEBDE7 /* ScheduledItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScheduledItem.swift; path = RxSwift/Schedulers/Internal/ScheduledItem.swift; sourceTree = "<group>"; };
 		A0805BE0AE45F88454735DAFEBBF8D11 /* PrimitiveSequence+Zip+arity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PrimitiveSequence+Zip+arity.swift"; path = "RxSwift/Traits/PrimitiveSequence/PrimitiveSequence+Zip+arity.swift"; sourceTree = "<group>"; };
@@ -718,7 +718,7 @@
 		AA806F089148FDCDE2C09FCDB2EDB5B8 /* StartWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StartWith.swift; path = RxSwift/Observables/StartWith.swift; sourceTree = "<group>"; };
 		AABC61DE2E2F3695D5F3ADFD0C35DB07 /* UIRefreshControl+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIRefreshControl+Rx.swift"; path = "RxCocoa/iOS/UIRefreshControl+Rx.swift"; sourceTree = "<group>"; };
 		AAD95E90B172A7DD73B82CCD22A5D285 /* RxWKNavigationDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxWKNavigationDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxWKNavigationDelegateProxy.swift; sourceTree = "<group>"; };
-		AB066FE48ABEEAA428B88D5B7C3B2324 /* Pods-RickAndMortyWiki */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RickAndMortyWiki"; path = Pods_RickAndMortyWiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB066FE48ABEEAA428B88D5B7C3B2324 /* Pods_RickAndMortyWiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickAndMortyWiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4FE9FDB35D1C5E0C43C97EFC57E091 /* Infallible+Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Infallible+Concurrency.swift"; path = "RxSwift/Traits/Infallible/Infallible+Concurrency.swift"; sourceTree = "<group>"; };
 		AC516A309DF3FF1D512E8528EDAEB048 /* Sequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sequence.swift; path = RxSwift/Observables/Sequence.swift; sourceTree = "<group>"; };
 		AC597811CAB48C88029623CDA293B746 /* Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = RxSwift/Observable.swift; sourceTree = "<group>"; };
@@ -991,11 +991,11 @@
 		50167FDCFBE88CCEEF1C3B2902F0C989 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				AB066FE48ABEEAA428B88D5B7C3B2324 /* Pods-RickAndMortyWiki */,
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				AB066FE48ABEEAA428B88D5B7C3B2324 /* Pods_RickAndMortyWiki.framework */,
 				701FC836A8B759D3906DC4DA59363E7C /* Pods-RickAndMortyWiki-RickAndMortyWikiUITests */,
 				75342E0C65C318833162B822BC0706EA /* Pods-RickAndMortyWikiTests */,
-				82F1475AA0F9C33F7EA4A1459305D2AB /* RxAlamofire */,
+				82F1475AA0F9C33F7EA4A1459305D2AB /* RxAlamofire.framework */,
 				BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa */,
 				FF8B264DFE802855D5D67E7CDDABFC3C /* RxRelay */,
 				809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift */,
@@ -1168,7 +1168,6 @@
 				68852781F198EC0FFEEF61784D3DC298 /* Zip+Collection.swift */,
 				D42DA38D060724E67804E478FC374334 /* Support Files */,
 			);
-			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -1191,7 +1190,6 @@
 				BC13C384C2FD272F150F3EAC715D4B83 /* Utils.swift */,
 				CE1CED315C47561604AAA9F770757F1A /* Support Files */,
 			);
-			name = RxRelay;
 			path = RxRelay;
 			sourceTree = "<group>";
 		};
@@ -1223,7 +1221,6 @@
 				E6E6624AC50A593864983D960AE8EA3F /* Core */,
 				3A8A80C15E0C1F810D6055F8097D1493 /* Support Files */,
 			);
-			name = RxAlamofire;
 			path = RxAlamofire;
 			sourceTree = "<group>";
 		};
@@ -1342,7 +1339,6 @@
 				CF7FA04E8427A0B01BE5141E01E401B3 /* WKWebView+Rx.swift */,
 				BCE30ABA9EC58EF17E6C55C9BFDB9AD2 /* Support Files */,
 			);
-			name = RxCocoa;
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
@@ -1428,7 +1424,6 @@
 				673A660370BA96E0FEB542826B53A5B1 /* Validation.swift */,
 				044B2B90CC7EEC184E5576F6FC9C85AC /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1565,7 +1560,7 @@
 			);
 			name = RxAlamofire;
 			productName = RxAlamofire;
-			productReference = 82F1475AA0F9C33F7EA4A1459305D2AB /* RxAlamofire */;
+			productReference = 82F1475AA0F9C33F7EA4A1459305D2AB /* RxAlamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4622BFEF3DC16E8BD15EEFC30D4D0084 /* RxRelay */ = {
@@ -1669,7 +1664,7 @@
 			);
 			name = "Pods-RickAndMortyWiki";
 			productName = Pods_RickAndMortyWiki;
-			productReference = AB066FE48ABEEAA428B88D5B7C3B2324 /* Pods-RickAndMortyWiki */;
+			productReference = AB066FE48ABEEAA428B88D5B7C3B2324 /* Pods_RickAndMortyWiki.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EA9EA43B3B503823EE36C60D9C8A865F /* RxSwift */ = {
@@ -1705,7 +1700,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */

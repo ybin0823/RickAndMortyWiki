@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="-1828" y="-490"/>
         </scene>
-        <!--Item 1-->
+        <!--Character-->
         <scene sceneID="mOu-Yl-Tcc">
             <objects>
                 <viewController id="9Mn-lO-QJw" customClass="CharacterViewController" customModule="RickAndMortyWiki" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,7 +53,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wAQ-fg-w26"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" image="person.fill" catalog="system" id="RbJ-GP-tLN"/>
+                    <tabBarItem key="tabBarItem" title="Character" image="person.fill" catalog="system" id="RbJ-GP-tLN"/>
                     <connections>
                         <outlet property="tableView" destination="14l-FX-1YF" id="Efa-gG-8V0"/>
                     </connections>
@@ -62,7 +62,7 @@
             </objects>
             <point key="canvasLocation" x="-875.36231884057975" y="-585.26785714285711"/>
         </scene>
-        <!--Item 2-->
+        <!--Location-->
         <scene sceneID="byc-HH-VBi">
             <objects>
                 <viewController id="bhk-g7-ySO" sceneMemberID="viewController">
@@ -72,13 +72,13 @@
                         <viewLayoutGuide key="safeArea" id="Lkr-6t-LYq"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" image="map" catalog="system" id="twh-bk-ZZX"/>
+                    <tabBarItem key="tabBarItem" title="Location" image="map" catalog="system" id="twh-bk-ZZX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3U1-hG-r9n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-884" y="87"/>
         </scene>
-        <!--Item-->
+        <!--Search-->
         <scene sceneID="kmU-po-iSH">
             <objects>
                 <viewController id="qvQ-kX-h0W" sceneMemberID="viewController">
@@ -88,7 +88,7 @@
                         <viewLayoutGuide key="safeArea" id="gvR-Ek-gD0"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="magnifyingglass" catalog="system" id="WtK-rT-QS4"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="WtK-rT-QS4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mad-BO-9YY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
