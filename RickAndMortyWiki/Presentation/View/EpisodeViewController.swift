@@ -29,4 +29,10 @@ class EpisodeViewController: UIViewController {
             return cell
         }.disposed(by: disposeBag)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let searchViewController = segue.destination as? SearchViewController {
+            searchViewController.viewModel = SearchViewModel(type: .episode, repository: EpisodeRepositoryImpl())
+        }
+    }
 }

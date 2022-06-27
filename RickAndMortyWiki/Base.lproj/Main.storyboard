@@ -57,7 +57,7 @@
                     <navigationItem key="navigationItem" id="Jlp-Ej-Maf">
                         <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="N7y-WG-Y1O">
                             <connections>
-                                <segue destination="qvQ-kX-h0W" kind="show" id="d8q-W5-1hJ"/>
+                                <segue destination="qvQ-kX-h0W" kind="show" identifier="SearchLocation" id="d8q-W5-1hJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -116,7 +116,7 @@
                     <navigationItem key="navigationItem" id="Hkf-HA-4by">
                         <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="jYh-ij-iK4">
                             <connections>
-                                <segue destination="qvQ-kX-h0W" kind="show" id="U8M-Gm-hbA"/>
+                                <segue destination="qvQ-kX-h0W" kind="show" identifier="SearchEpisode" id="U8M-Gm-hbA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -157,7 +157,7 @@
                     <navigationItem key="navigationItem" id="EXk-G3-Mwt">
                         <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="5jc-hQ-I50">
                             <connections>
-                                <segue destination="qvQ-kX-h0W" kind="show" id="sGe-vQ-eRl"/>
+                                <segue destination="qvQ-kX-h0W" kind="show" identifier="SearchCharacter" id="sGe-vQ-eRl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

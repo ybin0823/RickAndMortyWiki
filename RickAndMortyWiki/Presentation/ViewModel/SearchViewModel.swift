@@ -8,14 +8,25 @@
 import Foundation
 import RxSwift
 
+enum SearchType: String {
+    case character = "Character"
+    case location = "Location"
+    case episode = "Episode"
+}
+
 class SearchViewModel {
     var episode = PublishSubject<Episode?>()
+    let placeHolderText = BehaviorSubject<String>(value: "Search")
+    let type: SearchType
     let repository: EpisodeRepository
     
     private let disposeBag = DisposeBag()
     
-    init(repository: EpisodeRepository) {
+    init(type: SearchType, repository: EpisodeRepository) {
+        self.type = type
         self.repository = repository
+    
+        placeHolderText.onNext("\(type.rawValue) Search")
     }
     
     func search(id: Int) {

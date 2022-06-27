@@ -15,7 +15,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var emptyView: UIImageView!
     @IBOutlet weak var resultView: SearchResultView!
     
-    let viewModel = SearchViewModel(repository: EpisodeRepositoryImpl())
+    var viewModel: SearchViewModel!
     
     private let disposeBag = DisposeBag()
     
@@ -44,6 +44,7 @@ class SearchViewController: UIViewController {
     }
     
     private func bindViewModel() {
+        viewModel.placeHolderText.bind(to: searchTextField.rx.placeholder).disposed(by: disposeBag)
         viewModel.episode.map { $0 != nil }.bind(to: emptyView.rx.isHidden).disposed(by: disposeBag)
         viewModel.episode.map { $0 == nil }.bind(to: resultView.rx.isHidden).disposed(by: disposeBag)
         
