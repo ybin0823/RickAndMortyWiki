@@ -41,3 +41,7 @@ struct CharacterLocation {
     let name: String
     let url: String
 }
+
+struct Characters: Codable {
+    let results: [Character]
+}
