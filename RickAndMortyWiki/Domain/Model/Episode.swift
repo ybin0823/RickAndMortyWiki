@@ -16,3 +16,7 @@ struct Episode: Codable {
     let url: String
     let characters: [String]
 }
+
+struct Episodes: Codable {
+    let results: [Episode]
+}

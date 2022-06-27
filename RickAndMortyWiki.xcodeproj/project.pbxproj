@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E001F0C2869EC3200F1FDFE /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E001F0B2869EC3200F1FDFE /* EpisodeViewModel.swift */; };
 		0E01C6C82869B4BE00280238 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C6C72869B4BE00280238 /* SearchViewController.swift */; };
 		0E01C6CA2869B7D300280238 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C6C92869B7D300280238 /* Episode.swift */; };
 		0E01C6CC2869B87E00280238 /* EpisodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C6CB2869B87E00280238 /* EpisodeRepository.swift */; };
 		0E01C6CE2869BA5200280238 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C6CD2869BA5200280238 /* SearchViewModel.swift */; };
 		0E01C6D42869DEA600280238 /* SearchResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E01C6D32869DEA600280238 /* SearchResultView.xib */; };
 		0E01C6D82869DF0500280238 /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C6D72869DF0500280238 /* SearchResultView.swift */; };
+		0E01C6DA2869EB9F00280238 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C6D92869EB9F00280238 /* EpisodeViewController.swift */; };
 		0EBD87D628683FAB003E4708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD87D528683FAB003E4708 /* AppDelegate.swift */; };
 		0EBD87D828683FAB003E4708 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD87D728683FAB003E4708 /* SceneDelegate.swift */; };
 		0EBD87DD28683FAB003E4708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBD87DB28683FAB003E4708 /* Main.storyboard */; };
@@ -56,12 +58,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E001F0B2869EC3200F1FDFE /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
 		0E01C6C72869B4BE00280238 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0E01C6C92869B7D300280238 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		0E01C6CB2869B87E00280238 /* EpisodeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRepository.swift; sourceTree = "<group>"; };
 		0E01C6CD2869BA5200280238 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		0E01C6D32869DEA600280238 /* SearchResultView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultView.xib; sourceTree = "<group>"; };
 		0E01C6D72869DF0500280238 /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
+		0E01C6D92869EB9F00280238 /* EpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
 		0EBD87D228683FAB003E4708 /* RickAndMortyWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBD87D528683FAB003E4708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EBD87D728683FAB003E4708 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 				0E01C6C72869B4BE00280238 /* SearchViewController.swift */,
 				0E01C6D32869DEA600280238 /* SearchResultView.xib */,
 				0E01C6D72869DF0500280238 /* SearchResultView.swift */,
+				0E01C6D92869EB9F00280238 /* EpisodeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				0EF794082869872C00C87289 /* CharactersViewModel.swift */,
 				0EFD083528699F9F0018B06E /* LocationViewModel.swift */,
 				0E01C6CD2869BA5200280238 /* SearchViewModel.swift */,
+				0E001F0B2869EC3200F1FDFE /* EpisodeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -518,6 +524,7 @@
 				0ED4615628698284000987FA /* CharacterViewController.swift in Sources */,
 				0EF794092869872C00C87289 /* CharactersViewModel.swift in Sources */,
 				0EFD083428699F2F0018B06E /* LocationRepository.swift in Sources */,
+				0E01C6DA2869EB9F00280238 /* EpisodeViewController.swift in Sources */,
 				0EFD083228699ED80018B06E /* Location.swift in Sources */,
 				0EF794102869927F00C87289 /* CharacterTableViewCell.swift in Sources */,
 				0EBD87D628683FAB003E4708 /* AppDelegate.swift in Sources */,
@@ -532,6 +539,7 @@
 				0EBD87D828683FAB003E4708 /* SceneDelegate.swift in Sources */,
 				0E01C6CE2869BA5200280238 /* SearchViewModel.swift in Sources */,
 				0E01C6CA2869B7D300280238 /* Episode.swift in Sources */,
+				0E001F0C2869EC3200F1FDFE /* EpisodeViewModel.swift in Sources */,
 				0ED4615228696B92000987FA /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
