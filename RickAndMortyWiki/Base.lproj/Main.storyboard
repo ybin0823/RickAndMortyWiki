@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kCM-YN-ndR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -110,29 +111,66 @@
         <!--Search-->
         <scene sceneID="kmU-po-iSH">
             <objects>
-                <viewController id="qvQ-kX-h0W" sceneMemberID="viewController">
+                <viewController id="qvQ-kX-h0W" customClass="SearchViewController" customModule="RickAndMortyWiki" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DJo-Oq-oG9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Episode Number(ex. 1, 2)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wDm-Su-fLr">
+                                <rect key="frame" x="20" y="78" width="334" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="search"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdF-D1-Xzj">
+                                <rect key="frame" x="354" y="78" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Wra-w3-a3o"/>
+                                    <constraint firstAttribute="width" constant="50" id="dne-Gp-7wT"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="gUl-wz-Ebv"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="magnifyingglass" catalog="system"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="archivebox" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VFB-1l-iYT">
+                                <rect key="frame" x="157" y="379.5" width="100" height="97.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2Ml-ma-tdc"/>
+                                    <constraint firstAttribute="height" constant="100" id="Air-DJ-d4a"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gvR-Ek-gD0"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VFB-1l-iYT" firstAttribute="centerY" secondItem="gvR-Ek-gD0" secondAttribute="centerY" id="CNX-Ua-K4i"/>
+                            <constraint firstItem="JdF-D1-Xzj" firstAttribute="leading" secondItem="wDm-Su-fLr" secondAttribute="trailing" id="KOk-wn-Lio"/>
+                            <constraint firstItem="wDm-Su-fLr" firstAttribute="top" secondItem="gvR-Ek-gD0" secondAttribute="top" constant="34" id="SXq-eD-jSK"/>
+                            <constraint firstItem="gvR-Ek-gD0" firstAttribute="trailing" secondItem="JdF-D1-Xzj" secondAttribute="trailing" constant="10" id="duD-cA-b6a"/>
+                            <constraint firstItem="VFB-1l-iYT" firstAttribute="centerX" secondItem="gvR-Ek-gD0" secondAttribute="centerX" id="oh8-tt-pqV"/>
+                            <constraint firstItem="wDm-Su-fLr" firstAttribute="bottom" secondItem="JdF-D1-Xzj" secondAttribute="bottom" id="pKM-Vb-cxJ"/>
+                            <constraint firstItem="JdF-D1-Xzj" firstAttribute="centerY" secondItem="wDm-Su-fLr" secondAttribute="centerY" id="rsR-2y-3AM"/>
+                            <constraint firstItem="wDm-Su-fLr" firstAttribute="leading" secondItem="gvR-Ek-gD0" secondAttribute="leading" constant="20" id="uDC-5r-p41"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="WtK-rT-QS4"/>
+                    <connections>
+                        <outlet property="emptyView" destination="VFB-1l-iYT" id="SOg-EN-Onr"/>
+                        <outlet property="searchButton" destination="JdF-D1-Xzj" id="7BM-pd-m8F"/>
+                        <outlet property="searchTextField" destination="wDm-Su-fLr" id="wSH-8I-qMm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mad-BO-9YY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1857" y="271"/>
+            <point key="canvasLocation" x="-1857.9710144927537" y="270.53571428571428"/>
         </scene>
     </scenes>
     <resources>
+        <image name="archivebox" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
