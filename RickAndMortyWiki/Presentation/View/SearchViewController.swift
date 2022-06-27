@@ -13,6 +13,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var emptyView: UIImageView!
+    @IBOutlet weak var resultView: SearchResultView!
     
     let viewModel = SearchViewModel(repository: EpisodeRepositoryImpl())
     
@@ -43,9 +44,10 @@ class SearchViewController: UIViewController {
     }
     
     private func bindViewModel() {
-        viewModel.episode.subscribe { [weak self] event in
-            self?.emptyView.isHidden = (event.element != nil)
-        }.disposed(by: disposeBag)
+        viewModel.episode.map { $0 != nil }.bind(to: emptyView.rx.isHidden).disposed(by: disposeBag)
+        viewModel.episode.map { $0 == nil }.bind(to: resultView.rx.isHidden).disposed(by: disposeBag)
+        
+        viewModel.episode.bind(to: resultView.rx.model).disposed(by: disposeBag)
     }
     
     //TODO: - (jyb) RxGesture 가 좋을지
