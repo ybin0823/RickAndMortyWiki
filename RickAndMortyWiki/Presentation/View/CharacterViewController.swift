@@ -22,6 +22,13 @@ class CharacterViewController: UIViewController {
         
         self.tableView.register(UINib(nibName: "CharacterTableViewCell", bundle: nil), forCellReuseIdentifier: "CharacterCell")
         bindViewModel()
+        
+        Observable.zip(tableView.rx.itemSelected, tableView.rx.modelSelected(Character.self))
+            .subscribe(onNext: { [weak self] (indexPath, model) in
+                self?.tableView.deselectRow(at: indexPath, animated: false)
+                self?.pushDetailViewController(id: model.id)
+            })
+            .disposed(by: disposeBag)
     }
     
     private func bindViewModel() {
@@ -33,6 +40,15 @@ class CharacterViewController: UIViewController {
             
             return cell
         }.disposed(by: disposeBag)
+    }
+    
+    private func pushDetailViewController(id: Int?) {
+        if let viewController = UIStoryboard(name: "DetailScreen", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController {
+            viewController.id = id
+            viewController.viewModel = DetailViewModel(id: id!, repository: CharacterRepositoryImpl())
+            
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
