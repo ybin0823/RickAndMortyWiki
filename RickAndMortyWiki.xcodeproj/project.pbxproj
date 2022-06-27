@@ -17,6 +17,7 @@
 		0EBD87F928683FAC003E4708 /* RickAndMortyWikiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD87F828683FAC003E4708 /* RickAndMortyWikiUITestsLaunchTests.swift */; };
 		0EBD8809286964EA003E4708 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD8808286964EA003E4708 /* MainTabBarController.swift */; };
 		0ED4615228696B92000987FA /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED4615128696B92000987FA /* Character.swift */; };
+		0ED4615428696F78000987FA /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED4615328696F78000987FA /* ApiService.swift */; };
 		590D9E64C236465A50FD84FB /* Pods_RickAndMortyWikiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F907E8DA1B3EACB5A731B334 /* Pods_RickAndMortyWikiTests.framework */; };
 		B1EF6A3417B4298D8CBE46BD /* Pods_RickAndMortyWiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF148400B58D3DA9B9D43267 /* Pods_RickAndMortyWiki.framework */; };
 		CE651C964E0518176ABD22AA /* Pods_RickAndMortyWiki_RickAndMortyWikiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E831E72233F4CC1197AE35AF /* Pods_RickAndMortyWiki_RickAndMortyWikiUITests.framework */; };
@@ -54,6 +55,7 @@
 		0EBD87F828683FAC003E4708 /* RickAndMortyWikiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyWikiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0EBD8808286964EA003E4708 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		0ED4615128696B92000987FA /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		0ED4615328696F78000987FA /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		2D1759742BC68B5A1DC21940 /* Pods-RickAndMortyWikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyWikiTests.debug.xcconfig"; path = "Target Support Files/Pods-RickAndMortyWikiTests/Pods-RickAndMortyWikiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		667295827BAFA1C4F099EF60 /* Pods-RickAndMortyWiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyWiki.debug.xcconfig"; path = "Target Support Files/Pods-RickAndMortyWiki/Pods-RickAndMortyWiki.debug.xcconfig"; sourceTree = "<group>"; };
 		95088291CCD37873765E2E96 /* Pods-RickAndMortyWikiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyWikiTests.release.xcconfig"; path = "Target Support Files/Pods-RickAndMortyWikiTests/Pods-RickAndMortyWikiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		0EBD880B28696548003E4708 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0ED4615328696F78000987FA /* ApiService.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EBD87D628683FAB003E4708 /* AppDelegate.swift in Sources */,
+				0ED4615428696F78000987FA /* ApiService.swift in Sources */,
 				0EBD8809286964EA003E4708 /* MainTabBarController.swift in Sources */,
 				0EBD87D828683FAB003E4708 /* SceneDelegate.swift in Sources */,
 				0ED4615228696B92000987FA /* Character.swift in Sources */,

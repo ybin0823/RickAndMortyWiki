@@ -8,6 +8,7 @@ target 'RickAndMortyWiki' do
   # Pods for RickAndMortyWiki
   pod 'RxSwift', '6.5.0'
   pod 'RxCocoa', '6.5.0'
+  pod 'RxAlamofire'
 
   target 'RickAndMortyWikiTests' do
     inherit! :search_paths
