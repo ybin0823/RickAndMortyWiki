@@ -9,23 +9,22 @@ import Foundation
 import RxSwift
 
 class CharactersViewModel {
-    static let shared = CharactersViewModel()
     var characters = BehaviorSubject<[Character]>(value: [])
+    let repository: CharacterRepository
     
     private let disposeBag = DisposeBag()
     
-    init() {
+    init(repository: CharacterRepository) {
+        self.repository = repository
         reloadData()
     }
     
     func reloadData() {
-        // Observable<Data> --> subscribe --> members
-        ApiService.shared.get(Characters.self, path: "/character")
-            .map {
-                $0.results
-            }.subscribe {
-                self.characters.onNext($0)
-            }
-            .disposed(by: disposeBag)
+        repository.getCharacters().map {
+            $0.results
+        }.subscribe {
+            self.characters.onNext($0)
+        }
+        .disposed(by: disposeBag)
     }
 }

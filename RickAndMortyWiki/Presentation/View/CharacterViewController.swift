@@ -11,7 +11,7 @@ import RxCocoa
 
 class CharacterViewController: UIViewController {
     let disposeBag = DisposeBag()
-    let viewModel = CharactersViewModel()
+    let viewModel = CharactersViewModel(repository: CharacterRepositoryImpl())
     
     @IBOutlet weak var tableView: UITableView!
     
