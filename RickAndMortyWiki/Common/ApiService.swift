@@ -20,9 +20,9 @@ class ApiService {
     
     let baseUrl = "https://rickandmortyapi.com/api"
     
-    func get<T: Codable>(_ t: T.Type, path: String, param: [String: Any]? = nil) -> Observable<T> {
+    func get<T: Codable>(_ t: T.Type, url: String, param: [String: Any]? = nil) -> Observable<T> {
         return RxAlamofire.request(.get,
-                                   baseUrl + path, parameters: param)
+                                   url, parameters: param)
             .validate(statusCode: 100..<300)
             .data()
             .flatMap { data in
@@ -35,5 +35,9 @@ class ApiService {
                     return Disposables.create()
                 }
             }
+    }
+    
+    func get<T: Codable>(_ t: T.Type, path: String, param: [String: Any]? = nil) -> Observable<T> {
+        self.get(t, url: baseUrl + path, param: param)
     }
 }
