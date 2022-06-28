@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, LoadMore {
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var emptyView: UIImageView!
@@ -33,6 +33,14 @@ class SearchViewController: UIViewController {
                 self?.viewModel.search(text: text)
             })
             .disposed(by: disposeBag)
+        
+        tableView.rx.loadMore
+            .throttle(.milliseconds(300), latest: false, scheduler: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] isLoadMore in
+            if isLoadMore {
+                self?.loadMore()
+            }
+        }).disposed(by: disposeBag)
         
         bindViewModel()
     }
@@ -67,5 +75,9 @@ class SearchViewController: UIViewController {
     
     @objc func didTapView() {
         searchTextField.resignFirstResponder()
+    }
+    
+    func loadMore() {
+        viewModel.loadMore()
     }
 }
