@@ -28,7 +28,6 @@ class LocationViewModel {
         .disposed(by: disposeBag)
     }
     
-    //FIXME: - loadMore가 여러번 호출 되는 부분 보완 필요
     func loadMore() {
         if let info = self.info, let next = info.next {
             repository.getNextLocations(url: next)

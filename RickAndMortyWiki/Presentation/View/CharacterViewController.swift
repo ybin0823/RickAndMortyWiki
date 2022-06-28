@@ -30,7 +30,9 @@ class CharacterViewController: UIViewController, LoadMore {
             })
             .disposed(by: disposeBag)
         
-        tableView.rx.loadMore.subscribe(onNext: { [weak self] isLoadMore in
+        tableView.rx.loadMore
+            .throttle(.milliseconds(300), latest: false, scheduler: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] isLoadMore in
             if isLoadMore {
                 self?.loadMore()
             }

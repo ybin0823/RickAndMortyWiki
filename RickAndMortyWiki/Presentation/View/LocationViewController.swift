@@ -18,7 +18,9 @@ class LocationViewController: UIViewController, LoadMore {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.rx.loadMore.subscribe(onNext: { [weak self] isLoadMore in
+        tableView.rx.loadMore
+            .throttle(.milliseconds(300), latest: false, scheduler: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] isLoadMore in
             if isLoadMore {
                 self?.loadMore()
             }
