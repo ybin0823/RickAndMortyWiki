@@ -8,7 +8,7 @@
 import UIKit
 import RxSwift
 
-class LocationViewController: UIViewController {
+class LocationViewController: UIViewController, LoadMore {
     @IBOutlet weak var tableView: UITableView!
     
     private let disposeBag = DisposeBag()
@@ -17,6 +17,12 @@ class LocationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.rx.loadMore.subscribe(onNext: { [weak self] isLoadMore in
+            if isLoadMore {
+                self?.loadMore()
+            }
+        }).disposed(by: disposeBag)
         
         bindViewModel()
     }
@@ -34,5 +40,9 @@ class LocationViewController: UIViewController {
         if let searchViewController = segue.destination as? SearchViewController {
             searchViewController.viewModel = SearchViewModel(type: .location, repository: SearchRepositoryImpl())
         }
+    }
+    
+    func loadMore() {
+        viewModel.loadMore()
     }
 }

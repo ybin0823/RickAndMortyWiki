@@ -18,5 +18,6 @@ struct Location: Codable, CanSearch {
 }
 
 struct Locations: Codable {
+    let info: Info
     let results: [Location]
 }
