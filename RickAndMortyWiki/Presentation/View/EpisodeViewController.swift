@@ -8,7 +8,7 @@
 import UIKit
 import RxSwift
 
-class EpisodeViewController: UIViewController {
+class EpisodeViewController: UIViewController, LoadMore {
     @IBOutlet weak var tableView: UITableView!
     
     private let disposeBag = DisposeBag()
@@ -19,6 +19,14 @@ class EpisodeViewController: UIViewController {
         super.viewDidLoad()
         
         bindViewModel()
+        
+        tableView.rx.loadMore
+            .throttle(.milliseconds(300), latest: false, scheduler: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] isLoadMore in
+            if isLoadMore {
+                self?.loadMore()
+            }
+        }).disposed(by: disposeBag)
     }
     
     private func bindViewModel() {
@@ -34,5 +42,9 @@ class EpisodeViewController: UIViewController {
         if let searchViewController = segue.destination as? SearchViewController {
             searchViewController.viewModel = SearchViewModel(type: .episode, repository: SearchRepositoryImpl())
         }
+    }
+    
+    func loadMore() {
+        viewModel.loadMore()
     }
 }

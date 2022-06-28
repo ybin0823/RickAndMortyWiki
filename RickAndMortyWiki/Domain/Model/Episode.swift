@@ -18,5 +18,6 @@ struct Episode: Codable, CanSearch {
 }
 
 struct Episodes: Codable {
+    let info: Info
     let results: [Episode]
 }

@@ -13,6 +13,7 @@ class EpisodeViewModel {
     let repository: EpisodeRepository
     
     private let disposeBag = DisposeBag()
+    private var info: Info?
     
     init(repository: EpisodeRepository) {
         self.repository = repository
@@ -20,11 +21,22 @@ class EpisodeViewModel {
     }
     
     func reloadData() {
-        repository.getEpisodes().map {
-            $0.results
-        }.subscribe {
-            self.episodes.onNext($0)
-        }
+        repository.getEpisodes().subscribe(onNext: {
+            self.episodes.onNext($0.results)
+            self.info = $0.info
+        })
         .disposed(by: disposeBag)
+    }
+    
+    func loadMore() {
+        if let info = self.info, let next = info.next {
+            repository.getNextEpisodes(url: next)
+                .subscribe(onNext: {
+                let newValue = try? self.episodes.value() + $0.results
+                self.episodes.onNext(newValue ?? [])
+                self.info = $0.info
+            })
+            .disposed(by: disposeBag)
+        }
     }
 }
