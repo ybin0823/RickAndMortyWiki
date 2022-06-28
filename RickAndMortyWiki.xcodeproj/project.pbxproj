@@ -147,7 +147,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E001F13286A352100F1FDFE /* End */ = {
+		0E001F13286A352100F1FDFE /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 				0E001F11286A347D00F1FDFE /* DetailScreen.storyboard */,
@@ -155,7 +155,7 @@
 				0E001F19286A3F0B00F1FDFE /* DetailSection.xib */,
 				0E001F1B286A3F6700F1FDFE /* DetailSection.swift */,
 			);
-			path = End;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		0EBD87C928683FAB003E4708 = {
@@ -225,7 +225,7 @@
 		0EBD8806286964D9003E4708 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0E001F13286A352100F1FDFE /* End */,
+				0E001F13286A352100F1FDFE /* Detail */,
 				0EBD8808286964EA003E4708 /* MainTabBarController.swift */,
 				0ED4615528698284000987FA /* CharacterViewController.swift */,
 				0EF7940D286990FF00C87289 /* CharacterTableViewCell.xib */,
