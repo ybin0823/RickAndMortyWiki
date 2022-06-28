@@ -44,5 +44,6 @@ struct CharacterLocation {
 }
 
 struct Characters: Codable {
+    let info: Info
     let results: [Character]
 }

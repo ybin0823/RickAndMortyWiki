@@ -23,6 +23,7 @@
 		0E01C6DA2869EB9F00280238 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C6D92869EB9F00280238 /* EpisodeViewController.swift */; };
 		0E349253286A409100C99379 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E349252286A409100C99379 /* DetailViewModel.swift */; };
 		0E349255286A796400C99379 /* TableView+LoadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E349254286A796400C99379 /* TableView+LoadMore.swift */; };
+		0E349257286A7D1400C99379 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E349256286A7D1400C99379 /* Info.swift */; };
 		0EBD87D628683FAB003E4708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD87D528683FAB003E4708 /* AppDelegate.swift */; };
 		0EBD87D828683FAB003E4708 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD87D728683FAB003E4708 /* SceneDelegate.swift */; };
 		0EBD87DD28683FAB003E4708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBD87DB28683FAB003E4708 /* Main.storyboard */; };
@@ -82,6 +83,7 @@
 		0E01C6D92869EB9F00280238 /* EpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
 		0E349252286A409100C99379 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		0E349254286A796400C99379 /* TableView+LoadMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+LoadMore.swift"; sourceTree = "<group>"; };
+		0E349256286A7D1400C99379 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		0EBD87D228683FAB003E4708 /* RickAndMortyWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBD87D528683FAB003E4708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EBD87D728683FAB003E4708 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				0EFD083128699ED80018B06E /* Location.swift */,
 				0E01C6C92869B7D300280238 /* Episode.swift */,
 				0E001F0F2869FA8C00F1FDFE /* Protocol.swift */,
+				0E349256286A7D1400C99379 /* Info.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 				0ED4615628698284000987FA /* CharacterViewController.swift in Sources */,
 				0EF794092869872C00C87289 /* CharactersViewModel.swift in Sources */,
 				0EFD083428699F2F0018B06E /* LocationRepository.swift in Sources */,
+				0E349257286A7D1400C99379 /* Info.swift in Sources */,
 				0E001F15286A353200F1FDFE /* DetailViewController.swift in Sources */,
 				0E01C6DA2869EB9F00280238 /* EpisodeViewController.swift in Sources */,
 				0EFD083228699ED80018B06E /* Location.swift in Sources */,
