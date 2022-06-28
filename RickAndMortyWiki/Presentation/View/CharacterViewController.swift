@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 import Kingfisher
 
-class CharacterViewController: UIViewController {
+class CharacterViewController: UIViewController, LoadMore {
     @IBOutlet weak var tableView: UITableView!
     
     let viewModel = CharactersViewModel(repository: CharacterRepositoryImpl())
@@ -29,6 +29,12 @@ class CharacterViewController: UIViewController {
                 self?.pushDetailViewController(id: model.id)
             })
             .disposed(by: disposeBag)
+        
+        tableView.rx.loadMore.subscribe(onNext: { [weak self] isLoadMore in
+            if isLoadMore {
+                self?.loadMore()
+            }
+        }).disposed(by: disposeBag)
     }
     
     private func bindViewModel() {
@@ -60,4 +66,13 @@ class CharacterViewController: UIViewController {
             searchViewController.viewModel = SearchViewModel(type: .character, repository: SearchRepositoryImpl())
         }
     }
+    
+    func loadMore() {
+        print("load more")
+    }
+    
+}
+
+protocol LoadMore {
+    func loadMore()
 }
