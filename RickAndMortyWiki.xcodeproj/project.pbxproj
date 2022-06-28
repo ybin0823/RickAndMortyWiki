@@ -18,8 +18,6 @@
 		0E01C6CA2869B7D300280238 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C6C92869B7D300280238 /* Episode.swift */; };
 		0E01C6CC2869B87E00280238 /* EpisodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C6CB2869B87E00280238 /* EpisodeRepository.swift */; };
 		0E01C6CE2869BA5200280238 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C6CD2869BA5200280238 /* SearchViewModel.swift */; };
-		0E01C6D42869DEA600280238 /* SearchResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E01C6D32869DEA600280238 /* SearchResultView.xib */; };
-		0E01C6D82869DF0500280238 /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C6D72869DF0500280238 /* SearchResultView.swift */; };
 		0E01C6DA2869EB9F00280238 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01C6D92869EB9F00280238 /* EpisodeViewController.swift */; };
 		0E349253286A409100C99379 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E349252286A409100C99379 /* DetailViewModel.swift */; };
 		0E349255286A796400C99379 /* TableView+LoadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E349254286A796400C99379 /* TableView+LoadMore.swift */; };
@@ -78,8 +76,6 @@
 		0E01C6C92869B7D300280238 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		0E01C6CB2869B87E00280238 /* EpisodeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRepository.swift; sourceTree = "<group>"; };
 		0E01C6CD2869BA5200280238 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
-		0E01C6D32869DEA600280238 /* SearchResultView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultView.xib; sourceTree = "<group>"; };
-		0E01C6D72869DF0500280238 /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
 		0E01C6D92869EB9F00280238 /* EpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
 		0E349252286A409100C99379 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		0E349254286A796400C99379 /* TableView+LoadMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+LoadMore.swift"; sourceTree = "<group>"; };
@@ -232,8 +228,6 @@
 				0EF7940F2869927F00C87289 /* CharacterTableViewCell.swift */,
 				0EFD083728699FDC0018B06E /* LocationViewController.swift */,
 				0E01C6C72869B4BE00280238 /* SearchViewController.swift */,
-				0E01C6D32869DEA600280238 /* SearchResultView.xib */,
-				0E01C6D72869DF0500280238 /* SearchResultView.swift */,
 				0E01C6D92869EB9F00280238 /* EpisodeViewController.swift */,
 			);
 			path = View;
@@ -428,7 +422,6 @@
 				0EBD87DF28683FAC003E4708 /* Assets.xcassets in Resources */,
 				0E001F12286A347D00F1FDFE /* DetailScreen.storyboard in Resources */,
 				0EBD87DD28683FAB003E4708 /* Main.storyboard in Resources */,
-				0E01C6D42869DEA600280238 /* SearchResultView.xib in Resources */,
 				0EF7940E286990FF00C87289 /* CharacterTableViewCell.xib in Resources */,
 				0E001F1A286A3F0B00F1FDFE /* DetailSection.xib in Resources */,
 			);
@@ -568,7 +561,6 @@
 				0EF794102869927F00C87289 /* CharacterTableViewCell.swift in Sources */,
 				0EBD87D628683FAB003E4708 /* AppDelegate.swift in Sources */,
 				0ED4615428696F78000987FA /* ApiService.swift in Sources */,
-				0E01C6D82869DF0500280238 /* SearchResultView.swift in Sources */,
 				0E349255286A796400C99379 /* TableView+LoadMore.swift in Sources */,
 				0E01C6CC2869B87E00280238 /* EpisodeRepository.swift in Sources */,
 				0EFD083828699FDC0018B06E /* LocationViewController.swift in Sources */,
