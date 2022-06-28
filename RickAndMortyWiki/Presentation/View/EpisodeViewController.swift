@@ -33,6 +33,7 @@ class EpisodeViewController: UIViewController, LoadMore {
         viewModel.episodes.bind(to: tableView.rx.items) { tableView, index, item in
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "EpisodeCell") else { return UITableViewCell() }
             cell.textLabel?.text = item.name
+            cell.detailTextLabel?.text = item.episode
             
             return cell
         }.disposed(by: disposeBag)
