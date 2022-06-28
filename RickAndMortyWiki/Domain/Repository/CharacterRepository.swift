@@ -10,12 +10,17 @@ import RxSwift
 
 protocol CharacterRepository {
     func getCharacters() -> Observable<Characters>
+    func getNextCharacters(url: String) -> Observable<Characters>
     func getCharacter(id: Int) -> Observable<Character>
 }
 
 class CharacterRepositoryImpl: CharacterRepository {
     func getCharacters() -> Observable<Characters> {
         ApiService.shared.get(Characters.self, path: "/character")
+    }
+    
+    func getNextCharacters(url: String) -> Observable<Characters> {
+        ApiService.shared.get(Characters.self, url: url)
     }
     
     func getCharacter(id: Int) -> Observable<Character> {

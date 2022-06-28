@@ -13,6 +13,7 @@ class CharactersViewModel {
     let repository: CharacterRepository
     
     private let disposeBag = DisposeBag()
+    private var info: Info?
     
     init(repository: CharacterRepository) {
         self.repository = repository
@@ -20,11 +21,21 @@ class CharactersViewModel {
     }
     
     func reloadData() {
-        repository.getCharacters().map {
-            $0.results
-        }.subscribe {
-            self.characters.onNext($0)
-        }
+        repository.getCharacters().subscribe(onNext: {
+            self.characters.onNext($0.results)
+            self.info = $0.info
+        })
         .disposed(by: disposeBag)
+    }
+    
+    func loadMore() {
+        if let info = self.info, let next = info.next {
+            repository.getNextCharacters(url: next).subscribe(onNext: {
+                let newValue = try? self.characters.value() + $0.results
+                self.characters.onNext(newValue ?? [])
+                self.info = $0.info
+            })
+            .disposed(by: disposeBag)
+        }
     }
 }

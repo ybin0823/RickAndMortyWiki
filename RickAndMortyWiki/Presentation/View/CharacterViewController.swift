@@ -68,7 +68,7 @@ class CharacterViewController: UIViewController, LoadMore {
     }
     
     func loadMore() {
-        print("load more")
+        viewModel.loadMore()
     }
     
 }
